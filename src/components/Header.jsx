@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="w-full flex flex-col md:flex-row justify-between items-center py-6 px-6 md:px-10 bg-zinc-900 text-white">
       <div className="mx-auto md:mx-0 w-[10%] md:w-[20%] flex justify-center md:justify-end mb-4 md:mb-0">
-        <a href="/inicio">
+        <a href="/">
           <svg width="80" height="50" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <circle cx="100" cy="100" r="95" stroke="white" strokeWidth="10" fill="none" />
             <path d="M 70 120 Q 60 60, 100 60 Q 140 60, 130 120 T 70 120 Z" fill="orange" />

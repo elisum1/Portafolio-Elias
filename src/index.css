@@ -9,4 +9,7 @@
   font-weight: 300;
   font-style: normal;
 }
-  
+
+.hidden-until-loaded {
+  visibility: hidden;
+}
