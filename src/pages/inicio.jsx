@@ -118,7 +118,7 @@ function Inicio() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[80%] md:w-[50%] relative top-12">
               {/* Proyecto 1 */}
               <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out h-[100%]">
-                <img src="src/img/Captura de pantalla 2024-02-17 093131.png" alt="Proyecto 1" className="w-full h-48 object-cover rounded-lg" />
+                <img src="src/assets/imgs/Captura de pantalla 2024-02-17 093131.png" alt="Proyecto 1" className="w-full h-48 object-cover rounded-lg" />
                 <div className="mt-4">
                   <h3 className="text-lg md:text-xl font-semibold text-gray-800">Mi libro de diseño UI</h3>
                   <p className="text-sm md:text-base text-gray-500">Libro</p>
@@ -127,7 +127,7 @@ function Inicio() {
 
               {/* Proyecto 2 */}
               <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
-                <img src="src/img/Captura de pantalla 2024-02-23 080844.png" alt="Proyecto 2" className="w-full h-48 object-cover rounded-lg" />
+                <img src="src/assets/imgs/Captura de pantalla 2024-02-23 080844.png" alt="Proyecto 2" className="w-full h-48 object-cover rounded-lg" />
                 <div className="mt-4">
                   <h3 className="text-lg md:text-xl font-semibold text-gray-800">Creando un sistema de diseño eficiente</h3>
                   <p className="text-sm md:text-base text-gray-500">Sistema de diseño</p>
@@ -136,7 +136,7 @@ function Inicio() {
 
               {/* Proyecto 3 */}
               <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
-                <img src="src/img/Captura de pantalla 2024-04-05 184436.png" alt="Proyecto 3" className="w-full h-48 object-cover rounded-lg" />
+                <img src="src/assets/imgs/Captura de pantalla 2024-04-05 184436.png" alt="Proyecto 3" className="w-full h-48 object-cover rounded-lg" />
                 <div className="mt-4">
                   <h3 className="text-lg md:text-xl font-semibold text-gray-800">Feed de noticias de diseño interior</h3>
                   <p className="text-sm md:text-base text-gray-500">Proyecto personal</p>

@@ -182,7 +182,7 @@ const About = () => {
 
             </div>
             <div className="lg:w-1/2">
-              <img src="src/img/425354974_10232503182029066_2899442653006001819_n.jpg" alt="Journey" className="rounded-lg w-full object-cover" />
+              <img src="src/assets/imgs/425354974_10232503182029066_2899442653006001819_n.jpg" alt="Journey" className="rounded-lg w-full object-cover" />
             </div>
           </div>
         <hr className="border-t border-gray-300 my-8 w-full mx-auto" />
@@ -200,16 +200,16 @@ const About = () => {
         {/* Column of Smaller Squares on the Right */}
         <div className="hidden lg:flex lg:w-[25%] flex-col space-y-4 justify-start items-center fixed right-[.5%] top-[18%] h-[80vh] overflow-y-scroll">
           <div className="w-40 h-40 bg-gray-200 rounded-lg shadow-lg">
-            <img src="src/img/Imagen de WhatsApp 2024-09-30 a las 22.31.18_adda62d5.jpg" alt="Hobby 1" className="w-full h-full object-cover rounded-lg border-8 " />
+            <img src="src/assets/imgs/Imagen de WhatsApp 2024-09-30 a las 22.31.18_adda62d5.jpg" alt="Hobby 1" className="w-full h-full object-cover rounded-lg border-8 " />
           </div>
           <div className="w-40 h-40 bg-gray-200 rounded-lg shadow-lg">
-            <img src="src/img/photo_2024-09-23_22-25-28.jpg" alt="Hobby 2" className="w-full h-full object-cover rounded-lg border-8" />
+            <img src="src/assets/imgs/photo_2024-09-23_22-25-28.jpg" alt="Hobby 2" className="w-full h-full object-cover rounded-lg border-8" />
           </div>
           <div className="w-40 h-40 bg-gray-200 rounded-lg shadow-lg">
-            <img src="src/img/photo_2024-09-30_15-30-39.jpg" alt="Hobby 3" className="w-full h-full object-cover rounded-lg border-8" />
+            <img src="src/assets/imgs/photo_2024-09-30_15-30-39.jpg" alt="Hobby 3" className="w-full h-full object-cover rounded-lg border-8" />
           </div>
           <div className="w-40 h-40 bg-gray-200 rounded-lg shadow-lg">
-            <img src="src/img/Imagen de WhatsApp 2023-09-28 a las 18.46.17.jpg" alt="Hobby 3" className="w-full h-full object-cover rounded-lg border-8" />
+            <img src="src/assets/imgs/Imagen de WhatsApp 2023-09-28 a las 18.46.17.jpg" alt="Hobby 3" className="w-full h-full object-cover rounded-lg border-8" />
           </div>
         </div>
       </div>

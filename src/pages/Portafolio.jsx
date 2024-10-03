@@ -4,9 +4,9 @@ import Footer from '../components/footer';
 
 const Portafolio = () => {
   const proyectos = [
-    { id: 1, imgSrc: 'src/img/Captura de pantalla 2024-02-17 093131.png', title: 'Mi libro de diseño UI', description: 'Libro' },
-    { id: 2, imgSrc: 'src/img/Captura de pantalla 2024-02-23 080844.png', title: 'Creando un sistema de diseño eficiente', description: 'Sistema de diseño' },
-    { id: 3, imgSrc: 'src/img/Captura de pantalla 2024-04-05 184436.png', title: 'Feed de noticias de diseño interior', description: 'Proyecto personal' },
+    { id: 1, imgSrc: 'src/assets/imgs/Captura de pantalla 2024-02-17 093131.png', title: 'Mi libro de diseño UI', description: 'Libro' },
+    { id: 2, imgSrc: 'src/assets/imgs/Captura de pantalla 2024-02-23 080844.png', title: 'Creando un sistema de diseño eficiente', description: 'Sistema de diseño' },
+    { id: 3, imgSrc: 'src/assets/imgs/Captura de pantalla 2024-04-05 184436.png', title: 'Feed de noticias de diseño interior', description: 'Proyecto personal' },
     { id: 4, imgSrc: 'src/assets/img/Captura de pantalla 2024-10-01 111251.png', title: 'App de gestión de tareas', description: 'Aplicación web' },
     { id: 5, imgSrc: 'src/assets/img/Captura de pantalla 2024-10-01 124723.png', title: 'Portfolio personal', description: 'Portfolio' },
     { id: 6, imgSrc: '/project6.png', title: 'Sitio web de restaurante', description: 'Comercio' },
