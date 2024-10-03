@@ -36,7 +36,7 @@ const History = () => {
           {/* Imagen representativa */}
           <div className="lg:w-1/2 flex justify-center lg:justify-start">
             <img 
-              src="src/assets/img/photo_2024-09-27_07-20-21-remove.png" 
+              src="assets/img/photo_2024-09-27_07-20-21-remove.png" 
               alt="Mi Historia" 
               className="rounded-lg w-[80%] shadow-lg"
             />
