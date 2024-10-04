@@ -26,7 +26,8 @@ import icon8 from '/public/img/mysql.png'
 import icon9 from '/public/img/php.png'
 import icon10 from '/public/img/postgre.png'
 import icon11 from '/public/img/programacion.png'
- 
+
+import CV from '/public/Elias Eudomar_Urrieta Moreno-3.pdf'
 
 const About = () => {
   
@@ -216,7 +217,7 @@ const About = () => {
     Interested in learning more about my professional background? Click below to download my full resume.
   </p>
   <a 
-    href="public/Elias Eudomar_Urrieta Moreno-3.pdf" 
+    href={CV}
     download 
     className="inline-block py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all duration-200"
   >
