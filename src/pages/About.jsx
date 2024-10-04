@@ -109,7 +109,7 @@ const About = () => {
   <div className="lg:w-1/2 lg:pr-8 mb-6 lg:mb-0">
     <h2 className="text-lg md:text-2xl font-bold text-gray-800 mb-4">Mi mejor proyecto actual</h2>
     <p className="text-md md:text-lg text-gray-600 mb-6">
-    Este es uno de los mejores sitios web que he creado, con un diseño moderno, una interfaz de usuario intuitiva y funciones potentes.
+    Este es uno de los mejores sitios web que he creado, con un diseño moderno, una interfaz de usuario intuitiva y funciones potentes. Task Master es un Gestor web de tareas que incluye autenticacion de usuario y un gestor bastante minimalista y entendible para cualquier persona. Basicamente el usuario se regtistra y luego puede organizar sus tareas a traves del tiempo y gestionarlas , del mismo modo las puede completar.
     </p>
   </div>
   <div className="relative lg:w-1/2 w-[80%] flex flex-col items-center">
