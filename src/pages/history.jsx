@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/footer';
+import historyPhoto from '/public/img/photo_2024-09-27_07-20-21-remove.png'
 
 const History = () => {
   return (
@@ -36,7 +37,7 @@ const History = () => {
           {/* Imagen representativa */}
           <div className="lg:w-1/2 flex justify-center lg:justify-start">
             <img 
-              src="public/img/photo_2024-09-27_07-20-21-remove.png" 
+              src={historyPhoto} 
               alt="Mi Historia" 
               className="rounded-lg w-[80%] shadow-lg"
             />
