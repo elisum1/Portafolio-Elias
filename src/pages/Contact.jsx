@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import Footer from '../components/footer';
+import contactImage from '/public/img/call-center-service.png'; // Importa la imagen de contacto
 
 const Contact = () => {
   return (
@@ -26,7 +27,7 @@ const Contact = () => {
           <div className="lg:w-1/2 w-full mt-8 lg:mt-0 flex justify-center">
             <div className="w-full lg:w-[80%] h-48 bg-gray-200 rounded-lg shadow-lg flex items-center justify-center">
               <img
-                src="src/assets/img/call-center-service.png"
+                src={contactImage} // Utiliza la imagen importada
                 alt="Contact"
                 className="w-[20%] lg:w-[35%] h-auto rounded-lg"
               />
@@ -109,7 +110,7 @@ const Contact = () => {
               href="https://www.facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 text-3xl hover:scale-110 transition duration-300 flex justify-center  "
+              className="text-blue-600 text-3xl hover:scale-110 transition duration-300 flex justify-center"
             >
               <FaFacebookF />
             </a>
@@ -121,7 +122,7 @@ const Contact = () => {
               href="https://www.twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 text-3xl hover:scale-110 transition duration-300 flex justify-center "
+              className="text-blue-400 text-3xl hover:scale-110 transition duration-300 flex justify-center"
             >
               <FaTwitter />
             </a>
@@ -133,7 +134,7 @@ const Contact = () => {
               href="https://www.linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-700 text-3xl hover:scale-110 transition duration-300 flex justify-center "
+              className="text-blue-700 text-3xl hover:scale-110 transition duration-300 flex justify-center"
             >
               <FaLinkedinIn />
             </a>
@@ -145,7 +146,7 @@ const Contact = () => {
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-pink-600 text-3xl hover:scale-110 transition duration-300 flex justify-center "
+              className="text-pink-600 text-3xl hover:scale-110 transition duration-300 flex justify-center"
             >
               <FaInstagram />
             </a>

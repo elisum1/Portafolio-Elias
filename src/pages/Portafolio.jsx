@@ -4,13 +4,13 @@ import Footer from '../components/footer';
 
 const Portafolio = () => {
   const proyectos = [
-    { id: 1, imgSrc: 'public/imgs/Captura de pantalla 2024-02-17 093131.png', title: 'Mi libro de diseño UI', description: 'Libro' },
-    { id: 2, imgSrc: 'public/imgs/Captura de pantalla 2024-02-23 080844.png', title: 'Creando un sistema de diseño eficiente', description: 'Sistema de diseño' },
-    { id: 3, imgSrc: 'public/imgs/Captura de pantalla 2024-04-05 184436.png', title: 'Feed de noticias de diseño interior', description: 'Proyecto personal' },
-    { id: 4, imgSrc: 'public/img/Captura de pantalla 2024-10-01 111251.png', title: 'App de gestión de tareas', description: 'Aplicación web' },
-    { id: 5, imgSrc: 'public/img/Captura de pantalla 2024-10-01 124723.png', title: 'Portfolio personal', description: 'Portfolio' },
-    { id: 6, imgSrc: '/project6.png', title: 'Sitio web de restaurante', description: 'Comercio' },
-    { id: 7, imgSrc: '/project7.png', title: 'E-commerce de moda', description: 'E-commerce' },
+    { id: 1, imgSrc: '/img/Captura de pantalla 2024-02-17 093131.png', title: 'Mi libro de diseño UI', description: 'Libro' },
+    { id: 2, imgSrc: '/img/Captura de pantalla 2024-02-23 080844.png', title: 'Creando un sistema de diseño eficiente', description: 'Sistema de diseño' },
+    { id: 3, imgSrc: '/img/Captura de pantalla 2024-04-05 184436.png', title: 'Feed de noticias de diseño interior', description: 'Proyecto personal' },
+    { id: 4, imgSrc: '/img/Captura de pantalla 2024-10-01 111251.png', title: 'App de gestión de tareas', description: 'Aplicación web' },
+    { id: 5, imgSrc: '/img/Captura de pantalla 2024-10-01 124723.png', title: 'Portfolio personal', description: 'Portfolio' },
+    { id: 6, imgSrc: '/img/project6.png', title: 'Sitio web de restaurante', description: 'Comercio' },
+    { id: 7, imgSrc: '/img/project7.png', title: 'E-commerce de moda', description: 'E-commerce' },
   ];
 
   return (
@@ -30,7 +30,7 @@ const Portafolio = () => {
           {/* Imagen de la derecha */}
           <div className="md:w-1/2 w-full flex justify-center mt-6 md:mt-0">
             <div className="w-[90%] md:w-[80%] h-48 rounded-lg flex items-center justify-center">
-              <img src="public/img/contratar_programador.jpg" alt="" className="rounded-lg w-full object-cover h-full" />
+              <img src="/img/contratar_programador.jpg" alt="" className="rounded-lg w-full object-cover h-full" />
             </div>
           </div>
         </div>

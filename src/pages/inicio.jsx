@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import leftImage from '/public/img/Modificado.png';
 import rightImage from '/public/img/Untitled_design_1_-removebg-preview.png';
+import projectImage1 from '/public/img/Captura de pantalla 2024-02-17 093131.png';
+import projectImage2 from '/public/img/Captura de pantalla 2024-02-23 080844.png';
+import projectImage3 from '/public/img/Captura de pantalla 2024-04-05 184436.png';
 import Header from '../components/Header';
 import Footer from '../components/footer';
 
@@ -109,42 +112,42 @@ function Inicio() {
 
         {/* Portfolio Section */}
         <section id="portfolio" className="mt-24 text-center w-full px-4 md:px-10 ">
-          <h2 className="text-sm md:text-md font-semibold mb-4 text-gray-500">
-            ALGUNOS DE MIS ULTIMOS TRABAJOS
-          </h2>
-          <hr className="border-t border-gray-300 my-2 w-1/2 mx-auto" />
+  <h2 className="text-sm md:text-md font-semibold mb-4 text-gray-500">
+    ALGUNOS DE MIS ULTIMOS TRABAJOS
+  </h2>
+  <hr className="border-t border-gray-300 my-2 w-1/2 mx-auto" />
 
-          <div className="flex justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[80%] md:w-[50%] relative top-12">
-              {/* Proyecto 1 */}
-              <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out h-[100%]">
-                <img src="public/imgs/Captura de pantalla 2024-02-17 093131.png" alt="Proyecto 1" className="w-full h-48 object-cover rounded-lg" />
-                <div className="mt-4">
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-800">Mi libro de diseño UI</h3>
-                  <p className="text-sm md:text-base text-gray-500">Libro</p>
-                </div>
-              </div>
+  <div className="flex justify-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[80%] md:w-[50%] relative top-12">
+      {/* Proyecto 1 */}
+      <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out h-[100%]">
+        <img src={projectImage1} alt="Proyecto 1" className="w-full h-48 object-cover rounded-lg" />
+        <div className="mt-4">
+          <h3 className="text-lg md:text-xl font-semibold text-gray-800">Mi libro de diseño UI</h3>
+          <p className="text-sm md:text-base text-gray-500">Libro</p>
+        </div>
+      </div>
 
-              {/* Proyecto 2 */}
-              <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
-                <img src="public/imgs/Captura de pantalla 2024-02-23 080844.png" alt="Proyecto 2" className="w-full h-48 object-cover rounded-lg" />
-                <div className="mt-4">
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-800">Creando un sistema de diseño eficiente</h3>
-                  <p className="text-sm md:text-base text-gray-500">Sistema de diseño</p>
-                </div>
-              </div>
+      {/* Proyecto 2 */}
+      <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+        <img src={projectImage2} alt="Proyecto 2" className="w-full h-48 object-cover rounded-lg" />
+        <div className="mt-4">
+          <h3 className="text-lg md:text-xl font-semibold text-gray-800">Creando un sistema de diseño eficiente</h3>
+          <p className="text-sm md:text-base text-gray-500">Sistema de diseño</p>
+        </div>
+      </div>
 
-              {/* Proyecto 3 */}
-              <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
-                <img src="public/imgs/Captura de pantalla 2024-04-05 184436.png" alt="Proyecto 3" className="w-full h-48 object-cover rounded-lg" />
-                <div className="mt-4">
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-800">Feed de noticias de diseño interior</h3>
-                  <p className="text-sm md:text-base text-gray-500">Proyecto personal</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      {/* Proyecto 3 */}
+      <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+        <img src={projectImage3} alt="Proyecto 3" className="w-full h-48 object-cover rounded-lg" />
+        <div className="mt-4">
+          <h3 className="text-lg md:text-xl font-semibold text-gray-800">Feed de noticias de diseño interior</h3>
+          <p className="text-sm md:text-base text-gray-500">Proyecto personal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         <Footer />
       </div>
