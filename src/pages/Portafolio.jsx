@@ -4,11 +4,11 @@ import Footer from '../components/footer';
 
 const Portafolio = () => {
   const proyectos = [
-    { id: 1, imgSrc: '/img/Captura de pantalla 2024-02-17 093131.png', title: 'Mi libro de diseño UI', description: 'Libro' },
-    { id: 2, imgSrc: '/img/Captura de pantalla 2024-02-23 080844.png', title: 'Creando un sistema de diseño eficiente', description: 'Sistema de diseño' },
-    { id: 3, imgSrc: '/img/Captura de pantalla 2024-04-05 184436.png', title: 'Feed de noticias de diseño interior', description: 'Proyecto personal' },
+    { id: 1, imgSrc: '/img/Captura de pantalla 2024-02-17 093131.png', title: 'Diseño base de E-commerce', description: 'Tecnologia' },
+    { id: 2, imgSrc: '/img/Captura de pantalla 2024-02-23 080844.png', title: 'Tienda de Ropa', description: 'Moda' },
+    { id: 3, imgSrc: '/img/Captura de pantalla 2024-04-05 184436.png', title: 'Blog de Caffe', description: 'Gastronomia' },
     { id: 4, imgSrc: '/img/Captura de pantalla 2024-10-01 111251.png', title: 'App de gestión de tareas', description: 'Aplicación web' },
-    { id: 5, imgSrc: '/img/Captura de pantalla 2024-10-01 124723.png', title: 'Portfolio personal', description: 'Portfolio' },
+    { id: 5, imgSrc: '/img/Captura de pantalla 2024-10-01 124723.png', title: 'Gestor de Reservas de Hoteles', description: 'Aplicacion Web' },
     { id: 6, imgSrc: '/img/project6.png', title: 'Sitio web de restaurante', description: 'Comercio' },
     { id: 7, imgSrc: '/img/project7.png', title: 'E-commerce de moda', description: 'E-commerce' },
   ];
@@ -23,8 +23,8 @@ const Portafolio = () => {
             <h1 className="text-4xl md:text-7xl font-extrabold text-gray-800">
               portafolio<span className="text-orange-500">.</span>
             </h1>
-            <p className="text-md md:text-lg text-gray-600 mt-4">Check out some of my latest design case studies.</p>
-            <p className="text-sm md:text-md text-gray-500 mt-2">I've worked for startups, agencies, corporations, and government...</p>
+            <p className="text-md md:text-lg text-gray-600 mt-4">Vea algunos de mis últimos estudios de casos de diseño.</p>
+            <p className="text-sm md:text-md text-gray-500 mt-2">He trabajado para empresas emergentes, agencias, corporaciones y gobiernos...</p>
           </div>
 
           {/* Imagen de la derecha */}

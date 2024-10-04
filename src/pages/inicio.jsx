@@ -47,10 +47,10 @@ function Inicio() {
             {isOpened === 'designer' && (
               <div className="absolute left-[17%] md:left-[20%] w-[30%] md:w-[20%] text-center transition-all duration-520">
                 <h1 className="text-3xl lg:text-7xl font-light font-sans">
-                  <span className="text-orange-500 font-bold">designer</span>
+                  <span className="text-orange-500 font-bold">diseñador</span>
                 </h1>
                 <p className="mt-2 text-gray-100 text-xs md:text-sm lg:text-lg">
-                  UI/UX designer focused on user experiences.
+                Diseñador UI/UX enfocado en experiencias de usuario.
                 </p>
               </div>
             )}
@@ -100,10 +100,10 @@ function Inicio() {
             {isOpened === 'coder' && (
               <div className="absolute right-[18%] md:right-[20%] w-[30%] md:w-[20%] text-center transition-all duration-520">
                 <h1 className="text-3xl lg:text-7xl font-bold font-sans text-gray-100">
-                  &lt;coder&gt;
+                  &lt;codigo&gt;
                 </h1>
                 <p className="mt-2 text-orange-400 text-xs md:text-sm lg:text-lg">
-                  JavaScript developer skilled in modern frameworks.
+                Desarrollador de JavaScript con buenas bases en frameworks modernos.
                 </p>
               </div>
             )}
@@ -123,8 +123,8 @@ function Inicio() {
       <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out h-[100%]">
         <img src={projectImage1} alt="Proyecto 1" className="w-full h-48 object-cover rounded-lg" />
         <div className="mt-4">
-          <h3 className="text-lg md:text-xl font-semibold text-gray-800">Mi libro de diseño UI</h3>
-          <p className="text-sm md:text-base text-gray-500">Libro</p>
+          <h3 className="text-lg md:text-xl font-semibold text-gray-800">Diseño base de E-commerce</h3>
+          <p className="text-sm md:text-base text-gray-500">Tecnologia</p>
         </div>
       </div>
 
@@ -132,8 +132,8 @@ function Inicio() {
       <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
         <img src={projectImage2} alt="Proyecto 2" className="w-full h-48 object-cover rounded-lg" />
         <div className="mt-4">
-          <h3 className="text-lg md:text-xl font-semibold text-gray-800">Creando un sistema de diseño eficiente</h3>
-          <p className="text-sm md:text-base text-gray-500">Sistema de diseño</p>
+          <h3 className="text-lg md:text-xl font-semibold text-gray-800">Tienda de Ropa</h3>
+          <p className="text-sm md:text-base text-gray-500">Moda</p>
         </div>
       </div>
 
@@ -141,8 +141,8 @@ function Inicio() {
       <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
         <img src={projectImage3} alt="Proyecto 3" className="w-full h-48 object-cover rounded-lg" />
         <div className="mt-4">
-          <h3 className="text-lg md:text-xl font-semibold text-gray-800">Feed de noticias de diseño interior</h3>
-          <p className="text-sm md:text-base text-gray-500">Proyecto personal</p>
+          <h3 className="text-lg md:text-xl font-semibold text-gray-800">Blog de Caffe</h3>
+          <p className="text-sm md:text-base text-gray-500">Gastronomia</p>
         </div>
       </div>
     </div>

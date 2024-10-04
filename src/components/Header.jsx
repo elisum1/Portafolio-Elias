@@ -15,9 +15,9 @@ const Header = () => {
       </div>
       <nav className="w-full md:w-[60%] flex items-center justify-center font-normal">
         <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-10 items-center">
-          <li><a href="/about" className="hover:text-gray-300 transition-all">About</a></li>
+          <li><a href="/about" className="hover:text-gray-300 transition-all">Acerca de mi</a></li>
           <li><a href="/portafolio" className="hover:text-gray-300 transition-all">Portafolio</a></li>
-          <li><a href="/contact" className="hover:text-gray-300 transition-all">Contact</a></li>
+          <li><a href="/contact" className="hover:text-gray-300 transition-all">Contacto</a></li>
           <li className="flex space-x-5 text-2xl transition-all">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-orange-500 transition-all">
               <FaFacebookF />

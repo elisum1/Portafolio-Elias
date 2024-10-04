@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="relative w-full bg-gray-800 text-white py-4 mt-[7%]">
       <div className="container mx-auto text-center">
-        <p className="text-sm">© 2024 Your Name. All rights reserved.</p>
+        <p className="text-sm">© 2024 Elias Urrieta. Todos los derechos reservados.</p>
       </div>
 
       {/* Scroll to top button */}

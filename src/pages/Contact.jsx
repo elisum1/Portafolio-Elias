@@ -13,14 +13,13 @@ const Contact = () => {
         <div className="text-center py-12 h-auto w-full flex flex-col lg:flex-row justify-between items-center lg:px-10">
           <div className="lg:w-1/2 w-full">
             <h1 className="text-5xl md:text-7xl font-extrabold text-gray-800">
-              Contact<span className="text-orange-500">.</span>
+              Contacto<span className="text-orange-500">.</span>
             </h1>
             <p className="text-lg text-gray-600 mt-4">
-              We'd love to hear from you. Reach out to us anytime!
+            Nos encantaría saber de usted. ¡Comuníquese con nosotros en cualquier momento!
             </p>
             <p className="text-md text-gray-500 mt-2">
-              If you have any questions or would like to collaborate on a project, fill out the form below or reach us directly via email.
-            </p>
+            Si tienes alguna pregunta o deseas colaborar en algún proyecto, rellena el siguiente formulario o contáctanos directamente por correo electrónico.            </p>
           </div>
 
           {/* Imagen o cuadro vacío */}
@@ -43,7 +42,7 @@ const Contact = () => {
           <form className="w-full lg:w-[70%] bg-white shadow-lg rounded-lg p-4 md:p-8 grid grid-cols-1 gap-6 md:grid-cols-2 border border-gray-200">
             <div className="mb-6">
               <label htmlFor="name" className="block text-lg font-semibold text-gray-700">
-                Name
+                Nombre
               </label>
               <input
                 type="text"
@@ -67,7 +66,7 @@ const Contact = () => {
 
             <div className="col-span-1 md:col-span-2 mb-6">
               <label htmlFor="subject" className="block text-lg font-semibold text-gray-700">
-                Subject
+                Asunto
               </label>
               <input
                 type="text"
@@ -79,7 +78,7 @@ const Contact = () => {
 
             <div className="col-span-1 md:col-span-2 mb-6">
               <label htmlFor="message" className="block text-lg font-semibold text-gray-700">
-                Message
+                Mensaje
               </label>
               <textarea
                 id="message"
@@ -94,7 +93,8 @@ const Contact = () => {
                 type="submit"
                 className="bg-orange-500 text-white py-3 px-6 rounded-lg hover:bg-orange-600 transition duration-300 ease-in-out w-full md:w-auto"
               >
-                Send Message
+                
+                Enviar Mensaje
               </button>
             </div>
           </form>

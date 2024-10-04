@@ -28,6 +28,7 @@ import icon10 from '/public/img/postgre.png'
 import icon11 from '/public/img/programacion.png'
 
 import CV from '/public/Elias Eudomar_Urrieta Moreno-3.pdf'
+import CV2 from '/public/Resume_3-1.pdf'
 
 const About = () => {
   
@@ -35,20 +36,20 @@ const About = () => {
   return (
     <div className="raleway">
       {<Header/> }
-      <div className="ml- lg:mx-auto max-w-screen-xl flex flex-col lg:flex-row justify-center">
+      <div className="ml-[6%] lg:mx-auto max-w-screen-xl flex flex-col lg:flex-row justify-center">
         {/* Main Content */}
         <div className="w-full lg:w-[75%] pr-8">
           {/* Presentation Section */}
           <div className="text-center py-16 h-[80vh] lg:h-[40vh] flex flex-col lg:flex-row justify-between items-center px-4 lg:px-10 mt-10">
             <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-800">
-                About<span className="text-orange-500">.</span>
+                Acerca de mi<span className="text-orange-500">.</span>
               </h1>
               <p className="text-base md:text-lg text-gray-600 mt-4">
-                I'm a passionate designer and developer focused on creating user-centered digital experiences.
+              Soy un diseñador y desarrollador apasionado enfocado en crear experiencias digitales centradas en el usuario.
               </p>
               <p className="text-sm md:text-md text-gray-500 mt-2">
-                I love blending creativity with functionality to solve complex problems.
+              Me encanta combinar creatividad con funcionalidad para resolver problemas complejos.
               </p>
             </div>
 
@@ -67,10 +68,9 @@ const About = () => {
           <hr className="border-t border-gray-300 my-8 w-full mx-auto" />
 
           <div className="py-16 text-center bg-gray-100 flex flex-col lg:flex-row justify-between items-center">
-  <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 lg:mb-0 lg:w-1/3">My Studies</h2>
+  <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 lg:mb-0 lg:w-1/3">Mis Estudios</h2>
   <p className="text-md md:text-lg text-gray-600 mt-6 max-w-md lg:max-w-xl lg:ml-4">
-    I completed a 6-month bootcamp at Enyoi, where I earned the title of Full Stack Developer specializing in React and Node.js. Additionally, I have completed a Udemy course titled 'Desarrollo Web Full Stack.'
-  </p>
+  Completé un bootcamp de 6 meses en Enyoi, donde obtuve el título de Full Stack Developer con especialización en React y Node.js. Además, completé un curso de Udemy titulado 'Desarrollo Web Full Stack'.  </p>
 </div>
 
 
@@ -78,12 +78,11 @@ const About = () => {
 <hr className="border-t border-gray-300 my-8 w-full mx-auto" />
 <div className="py-16 text-center bg-white flex gap-12">
   <div className='w-[50%]'>
-  <h2 className="text-3xl md:text-2xl font-bold text-gray-800">My Hobbies</h2>
+  <h2 className="text-3xl md:text-2xl font-bold text-gray-800">Mis Hobbies</h2>
 
   </div>
   <p className="text-md md:text-lg text-gray-600 mt-6">
-    Outside of work, I enjoy a variety of activities including programming, exercising, studying, swimming, and singing. These hobbies allow me to balance my technical interests with physical and creative outlets.
-  </p>
+  Fuera del trabajo, disfruto de una variedad de actividades, como programar, hacer ejercicio, estudiar, nadar y cantar. Estos pasatiempos me permiten equilibrar mis intereses técnicos con actividades físicas y creativas.  </p>
 </div>
 
 
@@ -92,13 +91,13 @@ const About = () => {
 
           {/* My Activities Section */}
           <div className="py-16 text-center bg-white">
-            <h2 className="text-3xl md:text-2xl font-bold text-gray-800">My Activities</h2>
+            <h2 className="text-3xl md:text-2xl font-bold text-gray-800">Mis Actividades</h2>
             <div className="mt-6 flex justify-around items-center">
-              <div className="w-1/5 h-24 bg-red-500 text-white flex justify-center items-center">Programming 40%</div>
-              <div className="w-1/5 h-24 bg-blue-500 text-white flex justify-center items-center">Exercise 20%</div>
-              <div className="w-1/5 h-24 bg-green-500 text-white flex justify-center items-center">Studying 15%</div>
-              <div className="w-1/5 h-24 bg-yellow-500 text-white flex justify-center items-center">Swimming 15%</div>
-              <div className="w-1/5 h-24 bg-purple-500 text-white flex justify-center items-center">Singing 10%</div>
+              <div className="w-1/5 h-24 bg-red-500 text-white flex justify-center items-center">Programmar 40%</div>
+              <div className="w-1/5 h-24 bg-blue-500 text-white flex justify-center items-center">Exejercicios 20%</div>
+              <div className="w-1/5 h-24 bg-green-500 text-white flex justify-center items-center">Estudiar 15%</div>
+              <div className="w-1/5 h-24 bg-yellow-500 text-white flex justify-center items-center">Nadar 15%</div>
+              <div className="w-1/5 h-24 bg-purple-500 text-white flex justify-center items-center">Cantar 10%</div>
             </div>
           </div>
 
@@ -108,9 +107,9 @@ const About = () => {
          {/* Best Website Section */}
 <div className="py-16 flex flex-col lg:flex-row items-center">
   <div className="lg:w-1/2 lg:pr-8 mb-6 lg:mb-0">
-    <h2 className="text-lg md:text-2xl font-bold text-gray-800 mb-4">Best Website Created</h2>
+    <h2 className="text-lg md:text-2xl font-bold text-gray-800 mb-4">Mi mejor proyecto actual</h2>
     <p className="text-md md:text-lg text-gray-600 mb-6">
-      This is one of the best websites I've built, showcasing modern design, intuitive UI, and powerful features.
+    Este es uno de los mejores sitios web que he creado, con un diseño moderno, una interfaz de usuario intuitiva y funciones potentes.
     </p>
   </div>
   <div className="relative lg:w-1/2 w-[80%] flex flex-col items-center">
@@ -195,12 +194,11 @@ const About = () => {
           {/* Short History Section */}
           <div className="py-16 flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 lg:pr-8 mb-6 lg:mb-0">
-              <h2 className="text-lg md:text-2xl font-bold text-gray-800 mb-4">My Journey</h2>
+              <h2 className="text-lg md:text-2xl font-bold text-gray-800 mb-4">Mi viaje</h2>
               <p className="text-md md:text-lg text-gray-600 mb-6">
-                I started my journey as a curious learner, and through the years, I've developed skills in coding, design, and solving complex challenges.
-              </p>
+              Comencé mi viaje como un estudiante curioso y, a lo largo de los años, he desarrollado habilidades en codificación, diseño y resolución de desafíos complejos.              </p>
               <div className='flex gap-6'>
-              <a href="/history" className='text-blue-700'> Conoce mi historia !!</a> 
+              <a href="/history" className='text-blue-700'> Conoce mi historia !! Da click aca !!</a> 
               
 
               </div>
@@ -214,15 +212,25 @@ const About = () => {
         <div className="py-16 text-center bg-gray-100 flex flex-col items-center">
   <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">My CV</h2>
   <p className="text-md md:text-lg text-gray-600 mb-6 max-w-md">
-    Interested in learning more about my professional background? Click below to download my full resume.
-  </p>
+  ¿Quieres saber más sobre mi trayectoria profesional? Haz clic a continuación para descargar mi currículum completo.  </p>
+
+  <div className='flex gap-12'>
+  <a 
+    href={CV2}
+    download 
+    className="inline-block py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all duration-200"
+  >
+   Descarga mi HV clasica
+  </a>
+
   <a 
     href={CV}
     download 
     className="inline-block py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all duration-200"
   >
-    Download My CV
+    Descarga mi HV Convencional
   </a>
+  </div>
 </div>
 
 
