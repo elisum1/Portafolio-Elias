@@ -9,8 +9,8 @@ import Footer from '../components/footer';
 
 function Inicio() {
   const [isOpened, setIsOpened] = useState(null);
+  const [animationFinished, setAnimationFinished] = useState(false); // Estado para controlar la animación de los componentes
   const containerRef = useRef(null);
-
 
   const handleClick = (direction) => {
     setIsOpened(isOpened === direction ? null : direction);
@@ -22,15 +22,15 @@ function Inicio() {
 
   const handleOutsideClick = (event) => {
     if (containerRef.current && !containerRef.current.contains(event.target)) {
-      setIsOpened(null); // Close the doors if clicked outside
+      setIsOpened(null); // Cierra las puertas si se hace clic fuera
     }
   };
 
   useEffect(() => {
-    // Add event listener for clicks outside
+    // Agrega un event listener para hacer clic fuera del componente
     document.addEventListener('mousedown', handleOutsideClick);
     return () => {
-      // Cleanup the event listener on component unmount
+      // Limpieza del event listener al desmontar el componente
       document.removeEventListener('mousedown', handleOutsideClick);
     };
   }, []);
@@ -41,7 +41,7 @@ function Inicio() {
 
       <div ref={containerRef} className="flex flex-col items-center h-[50%] bg-white text-gray-900">
         {/* Hero Section */}
-        <section className="flex flex-col justify-center items-center w-full  mx-auto bg-zinc-900">
+        <section className={`flex flex-col justify-center items-center w-full mx-auto bg-zinc-900 ${animationFinished ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000`}>
           <div className="flex justify-center items-center w-full h-[60vh] relative">
             {/* Designer Info */}
             {isOpened === 'designer' && (
@@ -50,7 +50,7 @@ function Inicio() {
                   <span className="text-orange-500 font-bold">diseñador</span>
                 </h1>
                 <p className="mt-2 text-gray-100 text-xs md:text-sm lg:text-lg">
-                Diseñador UI/UX enfocado en experiencias de usuario.
+                  Diseñador UI/UX enfocado en experiencias de usuario.
                 </p>
               </div>
             )}
@@ -59,38 +59,38 @@ function Inicio() {
             <div className="relative w-full h-full flex justify-center items-center overflow-hidden">
               {/* Left Door */}
               <div
-                className={`absolute left-0 w-1/2 h-full transition-all duration-1000 ${
+                className={`absolute left-0 w-1/2 h-full transition-all duration-1000 ease-in-out ${
                   isOpened === 'designer' ? 'transform -translate-x-[70%]' : ''
                 } overflow-hidden`}
                 onMouseEnter={() => setIsOpened('designer')}
                 onMouseLeave={() => {}}
-                onClick={() => handleClick('designer')} // Handle click to toggle open/close
+                onClick={() => handleClick('designer')} // Maneja el clic para alternar abrir/cerrar
               >
-                <div className="w-full h-full flex justify-end items-center bg-white relative left-[22.5%] border-black border-2  ">
+                <div className="w-full h-full flex justify-end items-center bg-white relative left-[22.5%] border-black border-2">
                   <img
                     src={leftImage}
-                    alt="Left Door"
+                    alt="Imagen representando el diseñador"
                     className="object-cover w-[44%]"
-                    style={{ clipPath: 'inset(0 50% 0 0)' }} // Left half of the door
+                    style={{ clipPath: 'inset(0 50% 0 0)' }} // La mitad izquierda de la puerta
                   />
                 </div>
               </div>
 
               {/* Right Door */}
               <div
-                className={`absolute right-0 w-1/2 h-full transition-all duration-1000 ${
+                className={`absolute right-0 w-1/2 h-full transition-all duration-1000 ease-in-out ${
                   isOpened === 'coder' ? 'transform translate-x-[70%]' : ''
                 } overflow-hidden`}
                 onMouseEnter={() => setIsOpened('coder')}
                 onMouseLeave={() => {}}
-                onClick={() => handleClick('coder')} // Handle click to toggle open/close
+                onClick={() => handleClick('coder')} // Maneja el clic para alternar abrir/cerrar
               >
                 <div className="w-full h-full flex items-center bg-gray-100 relative right-[22%] border-black border-2">
                   <img
                     src={rightImage}
-                    alt="Right Door"
+                    alt="Imagen representando el desarrollador"
                     className="object-cover w-[44%]"
-                    style={{ clipPath: 'inset(0 0 0 50%)' }} // Right half of the door
+                    style={{ clipPath: 'inset(0 0 0 50%)' }} // La mitad derecha de la puerta
                   />
                 </div>
               </div>
@@ -103,7 +103,7 @@ function Inicio() {
                   &lt;codigo&gt;
                 </h1>
                 <p className="mt-2 text-orange-400 text-xs md:text-sm lg:text-lg">
-                Desarrollador de JavaScript con buenas bases en frameworks modernos.
+                  Desarrollador de JavaScript con buenas bases en frameworks modernos.
                 </p>
               </div>
             )}
@@ -111,46 +111,62 @@ function Inicio() {
         </section>
 
         {/* Portfolio Section */}
-        <section id="portfolio" className="mt-24 text-center w-full px-4 md:px-10 ">
-  <h2 className="text-sm md:text-md font-semibold mb-4 text-gray-500">
-    ALGUNOS DE MIS ULTIMOS TRABAJOS
-  </h2>
-  <hr className="border-t border-gray-300 my-2 w-1/2 mx-auto" />
+        <section
+          id="portfolio"
+          className={`mt-24 text-center w-full px-4 md:px-10 ${
+            animationFinished ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
+          } transition-all duration-1000 ease-in-out`}
+        >
+          <h2 className="text-sm md:text-md font-semibold mb-4 text-gray-500">
+            ALGUNOS DE MIS ÚLTIMOS TRABAJOS
+          </h2>
+          <hr className="border-t border-gray-300 my-2 w-1/2 mx-auto" />
 
-  <div className="flex justify-center">
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[80%] md:w-[50%] relative top-12">
-      {/* Proyecto 1 */}
-      <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out h-[100%]">
-        <img src={projectImage1} alt="Proyecto 1" className="w-full h-48 object-cover rounded-lg" />
-        <div className="mt-4">
-          <h3 className="text-lg md:text-xl font-semibold text-gray-800">Diseño base de E-commerce</h3>
-          <p className="text-sm md:text-base text-gray-500">Tecnologia</p>
-        </div>
-      </div>
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[80%] md:w-[50%] relative top-12">
+              {/* Proyecto 1 */}
+              <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out h-[100%]">
+                <img
+                  src={projectImage1}
+                  alt="Diseño base de E-commerce"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <div className="mt-4">
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-800">Diseño base de E-commerce</h3>
+                  <p className="text-sm md:text-base text-gray-500">Tecnología</p>
+                </div>
+              </div>
 
-      {/* Proyecto 2 */}
-      <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
-        <img src={projectImage2} alt="Proyecto 2" className="w-full h-48 object-cover rounded-lg" />
-        <div className="mt-4">
-          <h3 className="text-lg md:text-xl font-semibold text-gray-800">Tienda de Ropa</h3>
-          <p className="text-sm md:text-base text-gray-500">Moda</p>
-        </div>
-      </div>
+              {/* Proyecto 2 */}
+              <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+                <img
+                  src={projectImage2}
+                  alt="Tienda de Ropa"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <div className="mt-4">
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-800">Tienda de Ropa</h3>
+                  <p className="text-sm md:text-base text-gray-500">Moda</p>
+                </div>
+              </div>
 
-      {/* Proyecto 3 */}
-      <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
-        <img src={projectImage3} alt="Proyecto 3" className="w-full h-48 object-cover rounded-lg" />
-        <div className="mt-4">
-          <h3 className="text-lg md:text-xl font-semibold text-gray-800">Blog de Caffe</h3>
-          <p className="text-sm md:text-base text-gray-500">Gastronomia</p>
-        </div>
+              {/* Proyecto 3 */}
+              <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+                <img
+                  src={projectImage3}
+                  alt="Blog de Caffe"
+                  className="w-full h-48 object-cover rounded-lg"
+                />
+                <div className="mt-4">
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-800">Blog de Caffe</h3>
+                  <p className="text-sm md:text-base text-gray-500">Gastronomía</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
-  </div>
-</section>
-
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }

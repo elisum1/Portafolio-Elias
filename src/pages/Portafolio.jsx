@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/footer';
 
 const Portafolio = () => {
+  const [animationFinished, setAnimationFinished] = useState(false);
+
   const proyectos = [
     { id: 1, imgSrc: '/img/Captura de pantalla 2024-02-17 093131.png', title: 'Diseño base de E-commerce', description: 'Tecnologia' },
     { id: 2, imgSrc: '/img/Captura de pantalla 2024-02-23 080844.png', title: 'Tienda de Ropa', description: 'Moda' },
@@ -13,12 +15,16 @@ const Portafolio = () => {
     { id: 7, imgSrc: '/img/project7.png', title: 'E-commerce de moda', description: 'E-commerce' },
   ];
 
+  useEffect(() => {
+    setTimeout(() => setAnimationFinished(true), 1000);
+  }, []);
+
   return (
     <div className="raleway">
       <Header />
       <div className="mx-auto max-w-screen-xl mt-12">
         {/* Sección de presentación */}
-        <div className="text-center py-12 h-auto w-full flex flex-col md:flex-row justify-between items-center px-4 md:px-10">
+        <div className={`text-center py-12 h-auto w-full flex flex-col md:flex-row justify-between items-center px-4 md:px-10 transition-all duration-1000 ease-in-out ${animationFinished ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'}`}>
           <div className="md:w-1/2 w-full">
             <h1 className="text-4xl md:text-7xl font-extrabold text-gray-800">
               portafolio<span className="text-orange-500">.</span>
@@ -28,9 +34,9 @@ const Portafolio = () => {
           </div>
 
           {/* Imagen de la derecha */}
-          <div className="md:w-1/2 w-full flex justify-center mt-6 md:mt-0">
+          <div className={`md:w-1/2 w-full flex justify-center mt-6 md:mt-0 transition-all duration-1000 ease-in-out ${animationFinished ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}`}>
             <div className="w-[90%] md:w-[80%] h-48 rounded-lg flex items-center justify-center">
-              <img src="/img/contratar_programador.jpg" alt="" className="rounded-lg w-full object-cover h-full" />
+              <img src="/img/contratar_programador.jpg" alt="Imagen de contratar programador" className="rounded-lg w-full object-cover h-full" />
             </div>
           </div>
         </div>
@@ -39,7 +45,7 @@ const Portafolio = () => {
 
         {/* Sección de proyectos */}
         <div className="flex justify-center px-4 md:px-0">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-screen-lg">
+          <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-screen-lg transition-all duration-1000 ease-in-out ${animationFinished ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             {proyectos.map(proyecto => (
               <div key={proyecto.id} className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
                 <img src={proyecto.imgSrc} alt={proyecto.title} className="w-full h-40 md:h-48 object-cover rounded-lg" />

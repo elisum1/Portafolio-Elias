@@ -11,7 +11,7 @@ import journeyImage from '/public/img/425354974_10232503182029066_28994426530060
 
 // Imágenes de los hobbies
 import hobbyImage1 from '/public/img/Imagen de WhatsApp 2024-09-30 a las 22.31.18_adda62d5.jpg';
-import hobbyImage2 from '/public/img/photo_2024-09-23_22-25-28.jpg';
+import hobbyImage2 from '/public/img/42489715_10217607350282582_1637976170211311616_n.jpg';
 import hobbyImage3 from '/public/img/photo_2024-09-30_15-30-39.jpg';
 import hobbyImage4 from '/public/img/Imagen de WhatsApp 2023-09-28 a las 18.46.17.jpg';
 
