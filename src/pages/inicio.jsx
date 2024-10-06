@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import leftImage from '/public/img/Modificado.png';
 import rightImage from '/public/img/Untitled_design_1_-removebg-preview.png';
-import projectImage1 from '/public/img/Captura de pantalla 2024-02-17 093131.png';
-import projectImage2 from '/public/img/Captura de pantalla 2024-02-23 080844.png';
+import projectImage1 from '/public/img/Captura de pantalla 2024-10-01 111251.png';
+import projectImage2 from '/public/img/Captura de pantalla 2024-10-01 124723.png';
 import projectImage3 from '/public/img/Captura de pantalla 2024-04-05 184436.png';
 import Header from '../components/Header';
 import Footer from '../components/footer';
@@ -132,8 +132,8 @@ function Inicio() {
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <div className="mt-4">
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-800">Diseño base de E-commerce</h3>
-                  <p className="text-sm md:text-base text-gray-500">Tecnología</p>
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-800">TaskMaster</h3>
+                  <p className="text-sm md:text-base text-gray-500">Gestor de Tareas</p>
                 </div>
               </div>
 
@@ -145,8 +145,8 @@ function Inicio() {
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <div className="mt-4">
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-800">Tienda de Ropa</h3>
-                  <p className="text-sm md:text-base text-gray-500">Moda</p>
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-800">BestDay</h3>
+                  <p className="text-sm md:text-base text-gray-500">Gestor de Hoteles</p>
                 </div>
               </div>
 
