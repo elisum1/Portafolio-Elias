@@ -6,13 +6,13 @@ const Portafolio = () => {
   const [animationFinished, setAnimationFinished] = useState(false);
 
   const proyectos = [
-    { id: 1, imgSrc: '/img/Captura de pantalla 2024-02-17 093131.png', title: 'Diseño base de E-commerce', description: 'Tecnologia' },
-    { id: 2, imgSrc: '/img/Captura de pantalla 2024-02-23 080844.png', title: 'Tienda de Ropa', description: 'Moda' },
-    { id: 3, imgSrc: '/img/Captura de pantalla 2024-04-05 184436.png', title: 'Blog de Caffe', description: 'Gastronomia' },
-    { id: 4, imgSrc: '/img/Captura de pantalla 2024-10-01 111251.png', title: 'App de gestión de tareas', description: 'Aplicación web' },
-    { id: 5, imgSrc: '/img/Captura de pantalla 2024-10-01 124723.png', title: 'Gestor de Reservas de Hoteles', description: 'Aplicacion Web' },
-    { id: 6, imgSrc: '/img/project6.png', title: 'Sitio web de restaurante', description: 'Comercio' },
-    { id: 7, imgSrc: '/img/project7.png', title: 'E-commerce de moda', description: 'E-commerce' },
+    { id: 1, imgSrc: '/img/Captura de pantalla 2024-02-17 093131.png', title: 'Diseño base de E-commerce', description: 'Tecnologia', link: 'https://link-a-ecommerce.com' },
+    { id: 2, imgSrc: '/img/Captura de pantalla 2024-02-23 080844.png', title: 'Tienda de Ropa', description: 'Moda', link: 'https://link-a-tienda.com' },
+    { id: 3, imgSrc: '/img/Captura de pantalla 2024-04-05 184436.png', title: 'Blog de Caffe', description: 'Gastronomia', link: 'https://link-a-blog.com' },
+    { id: 4, imgSrc: '/img/Captura de pantalla 2024-10-01 111251.png', title: 'App de gestión de tareas', description: 'Aplicación web', link: 'https://task-web2.vercel.app' },
+    { id: 5, imgSrc: '/img/Captura de pantalla 2024-10-01 124723.png', title: 'Gestor de Reservas de Hoteles', description: 'Aplicacion Web', link: 'https://hotel-client-xi.vercel.app/' },
+    { id: 6, imgSrc: '/img/project6.png', title: 'Sitio web de restaurante', description: 'Comercio', link: 'https://link-a-restaurante.com' },
+    { id: 7, imgSrc: '/img/project7.png', title: 'E-commerce de moda', description: 'E-commerce', link: 'https://link-a-ecommerce-moda.com' },
   ];
 
   useEffect(() => {
@@ -47,7 +47,11 @@ const Portafolio = () => {
         <div className="flex justify-center px-4 md:px-0">
           <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-screen-lg transition-all duration-1000 ease-in-out ${animationFinished ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             {proyectos.map(proyecto => (
-              <div key={proyecto.id} className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+              <div 
+                key={proyecto.id} 
+                className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out cursor-pointer"
+                onClick={() => window.location.href = proyecto.link}
+              >
                 <img src={proyecto.imgSrc} alt={proyecto.title} className="w-full h-40 md:h-48 object-cover rounded-lg" />
                 <div className="mt-4">
                   <h3 className="text-lg md:text-xl font-semibold text-gray-800">{proyecto.title}</h3>
