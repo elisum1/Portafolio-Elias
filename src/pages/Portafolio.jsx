@@ -6,9 +6,9 @@ const Portafolio = () => {
   const [animationFinished, setAnimationFinished] = useState(false);
 
   const proyectos = [
-    { id: 1, imgSrc: '/img/Captura de pantalla 2024-02-17 093131.png', title: 'Diseño base de E-commerce', description: 'Tecnologia', link: 'https://link-a-ecommerce.com' },
-    { id: 2, imgSrc: '/img/Captura de pantalla 2024-02-23 080844.png', title: 'Tienda de Ropa', description: 'Moda', link: 'https://link-a-tienda.com' },
-    { id: 3, imgSrc: '/img/Captura de pantalla 2024-04-05 184436.png', title: 'Blog de Caffe', description: 'Gastronomia', link: 'https://link-a-blog.com' },
+    { id: 1, imgSrc: '/img/Captura de pantalla 2024-10-07 115728.png', title: 'Diseño de Portafolio', description: 'Tecnologia', link: 'https://estilo-de-portafolio.vercel.app' },
+    { id: 2, imgSrc: '/img/Captura de pantalla 2024-02-23 080844.png', title: 'Tienda de Ropa', description: 'Moda', link: 'https://teinda-de-ropa.vercel.app' },
+    { id: 3, imgSrc: '/img/Captura de pantalla 2024-04-05 184436.png', title: 'Blog de Caffe', description: 'Gastronomia', link: 'https://blog-de-cafe-html.vercel.app/' },
     { id: 4, imgSrc: '/img/Captura de pantalla 2024-10-01 111251.png', title: 'App de gestión de tareas', description: 'Aplicación web', link: 'https://task-web2.vercel.app' },
     { id: 5, imgSrc: '/img/Captura de pantalla 2024-10-01 124723.png', title: 'Gestor de Reservas de Hoteles', description: 'Aplicacion Web', link: 'https://hotel-client-xi.vercel.app/' },
     { id: 6, imgSrc: '/img/project6.png', title: 'Sitio web de restaurante', description: 'Comercio', link: 'https://link-a-restaurante.com' },

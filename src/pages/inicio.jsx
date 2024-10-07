@@ -125,33 +125,35 @@ function Inicio() {
           <div className="flex justify-center">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[80%] md:w-[50%] relative top-12">
               {/* Proyecto 1 */}
-              <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out h-[100%]">
+              <a  href='https://task-web2.vercel.app' className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out h-[100%]">
                 <img
                   src={projectImage1}
                   alt="Diseño base de E-commerce"
                   className="w-full h-48 object-cover rounded-lg"
+                 
                 />
                 <div className="mt-4">
                   <h3 className="text-lg md:text-xl font-semibold text-gray-800">TaskMaster</h3>
                   <p className="text-sm md:text-base text-gray-500">Gestor de Tareas</p>
                 </div>
-              </div>
+              </a>
 
               {/* Proyecto 2 */}
-              <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+              <a  href='https://hotel-client-xi.vercel.app/' className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
                 <img
                   src={projectImage2}
                   alt="Tienda de Ropa"
                   className="w-full h-48 object-cover rounded-lg"
+                  
                 />
                 <div className="mt-4">
                   <h3 className="text-lg md:text-xl font-semibold text-gray-800">BestDay</h3>
                   <p className="text-sm md:text-base text-gray-500">Gestor de Hoteles</p>
                 </div>
-              </div>
+              </a>
 
               {/* Proyecto 3 */}
-              <div className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+              <a href='https://blog-de-cafe-html.vercel.app' className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
                 <img
                   src={projectImage3}
                   alt="Blog de Caffe"
@@ -161,7 +163,7 @@ function Inicio() {
                   <h3 className="text-lg md:text-xl font-semibold text-gray-800">Blog de Caffe</h3>
                   <p className="text-sm md:text-base text-gray-500">Gastronomía</p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </section>
