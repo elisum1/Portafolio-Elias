@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 
 import phoneImage from '/public/img/iPhone-13-PRO-localhost.png';
 import screenshot1 from '/public/img/Captura de pantalla 2024-10-01 111251.png';
@@ -9,11 +9,18 @@ import aboutImage from '/public/img/photo_2024-09-27_07-20-21-remove.png';
 import journeyImage from '/public/img/425354974_10232503182029066_2899442653006001819_n.jpg';
 // import cvLink from '/path/to/cv'; // Asegúrate de que esta ruta sea correcta
 
+
+import FactImage1 from '/public/img/Captura de pantalla 2024-11-22 235211.png'
+import FactImage2 from '/public/img/Captura de pantalla 2024-11-22 235154.png'
+import FactImage3 from '/public/img/Captura de pantalla 2024-11-22 235125.png'
+
 // Imágenes de los hobbies
 import hobbyImage1 from '/public/img/Imagen de WhatsApp 2024-09-30 a las 22.31.18_adda62d5.jpg';
 import hobbyImage2 from '/public/img/42489715_10217607350282582_1637976170211311616_n.jpg';
 import hobbyImage3 from '/public/img/photo_2024-09-30_15-30-39.jpg';
 import hobbyImage4 from '/public/img/Imagen de WhatsApp 2023-09-28 a las 18.46.17.jpg';
+import hobbyImage5 from '/public/img/Imagen de WhatsApp 2024-11-18 a las 17.04.21_fccf576f.jpg';
+
 
 import icon1 from '/public/img/codificacion.png'
 import icon2 from '/public/img/icons8-google-code-50.png'
@@ -102,12 +109,53 @@ const About = () => {
           </div>
 
           {/* Divider Line */}
-          <hr className="border-t border-gray-300 my-8 w-full mx-auto" />
+          <hr className="border-t border-gray-300 my-8 w-full mx-auto " />
+
+          <div className="py-16 flex flex-col lg:flex-row items-center bg-gradient-to-r from-blue-100 via-indigo-200 to-purple-300 rounded-lg shadow-lg">
+  <div className="lg:w-1/2 lg:pr-8 mb-6 lg:mb-0 ml-5">
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">FactureServices: Mi Proyecto Destacado</h2>
+    <p className="text-md md:text-lg text-gray-600 mb-6">
+      <span className="font-semibold text-gray-800">FactureServices</span> es un sistema avanzado de gestión de facturación diseñado para empresas que necesitan una solución simple y eficiente. Con una interfaz limpia y moderna, este software permite la generación de facturas personalizadas, administración de productos, gestión de pagos y más. Los usuarios pueden generar facturas rápidamente y administrar sus operaciones con facilidad. Este SOFTWARE ya a sido vendido y aprobado por clientes como un software practico para empresas con necesidades puntuales.
+    </p>
+    <a 
+      href="https://facture-app-ten.vercel.app/" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="inline-block bg-orange-500 text-white py-3 px-6 rounded-lg shadow-md hover:bg-orange-600 transition-all duration-300"
+    >
+      Ver Demo en Vivo
+    </a>
+  </div>
+
+  <div className="relative lg:w-1/2 w-[90%] flex flex-col items-center">
+    <div className="flex justify-center space-x-4 mb-6">
+      <img 
+        src={FactImage1} 
+        alt="FactureServices en dispositivo móvil" 
+        className="rounded-lg object-cover w-[40%] h-[60%] shadow-lg transition-all transform hover:scale-105 hover:shadow-2xl" 
+      />
+      <img 
+        src={FactImage2} 
+        alt="Interfaz de FactureServices" 
+        className="rounded-lg object-cover w-[40%] h-[60%] shadow-lg transition-all transform hover:scale-105 hover:shadow-2xl" 
+      />
+    </div>
+    <img 
+      src={FactImage3} 
+      alt="Pantalla completa de FactureServices" 
+      className="rounded-lg object-cover w-[80%] h-[60%] shadow-lg transition-all transform hover:scale-105 hover:shadow-2xl mt-2"
+    />
+  </div>
+</div>
+
+
+<hr className="border-t border-gray-300 my-8 w-full mx-auto" />
+
 
          {/* Best Website Section */}
 <div className="py-16 flex flex-col lg:flex-row items-center">
   <div className="lg:w-1/2 lg:pr-8 mb-6 lg:mb-0">
-    <h2 className="text-lg md:text-2xl font-bold text-gray-800 mb-4">Mi mejor proyecto actual</h2>
+    <h2 className="text-lg md:text-2xl font-bold text-gray-800 mb-4">Task Master</h2>
     <p className="text-md md:text-lg text-gray-600 mb-6">
     Este es uno de los mejores sitios web que he creado, con un diseño moderno, una interfaz de usuario intuitiva y funciones potentes. Task Master es un Gestor web de tareas que incluye autenticacion de usuario y un gestor bastante minimalista y entendible para cualquier persona. Basicamente el usuario se regtistra y luego puede organizar sus tareas a traves del tiempo y gestionarlas , del mismo modo las puede completar.
     </p>
@@ -249,6 +297,9 @@ const About = () => {
           </div>
           <div className="w-40 h-40 bg-gray-200 rounded-lg shadow-lg">
             <img src= {hobbyImage4} alt="Hobby 3" className="w-full h-full object-cover rounded-lg border-8" />
+          </div>
+          <div className="w-40 h-40 bg-gray-200 rounded-lg shadow-lg">
+            <img src= {hobbyImage5} alt="Hobby 3" className="w-full h-full object-cover rounded-lg border-8" />
           </div>
         </div>
       </div>

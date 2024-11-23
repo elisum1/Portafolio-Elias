@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import leftImage from '/public/img/Modificado.png';
+import leftImage from '/public/img/Untitled_design-removebg-preview.png';
 import rightImage from '/public/img/Untitled_design_1_-removebg-preview.png';
-import projectImage1 from '/public/img/Captura de pantalla 2024-10-01 111251.png';
+import projectImage1 from '/public/img/Captura de pantalla 2024-11-22 225610.png';
 import projectImage2 from '/public/img/Captura de pantalla 2024-10-01 124723.png';
-import projectImage3 from '/public/img/Captura de pantalla 2024-04-05 184436.png';
+import projectImage3 from '/public/img/Captura de pantalla 2024-11-22 225414.png';
 import Header from '../components/Header';
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 
 function Inicio() {
   const [isOpened, setIsOpened] = useState(null);
@@ -70,8 +70,8 @@ function Inicio() {
                   <img
                     src={leftImage}
                     alt="Imagen representando el diseñador"
-                    className="object-cover w-[44%]"
-                    style={{ clipPath: 'inset(0 50% 0 0)' }} // La mitad izquierda de la puerta
+                    className="object-cover w-[44%] h-[106%]"
+                    style={{ clipPath: 'inset(0 40% 0 0)' }} // La mitad izquierda de la puerta
                   />
                 </div>
               </div>
@@ -89,8 +89,8 @@ function Inicio() {
                   <img
                     src={rightImage}
                     alt="Imagen representando el desarrollador"
-                    className="object-cover w-[44%]"
-                    style={{ clipPath: 'inset(0 0 0 50%)' }} // La mitad derecha de la puerta
+                    className="object-cover w-[44%] h-[106%]"
+                    style={{ clipPath: 'inset(0 0 0 40%)' }} // La mitad derecha de la puerta
                   />
                 </div>
               </div>
@@ -125,7 +125,7 @@ function Inicio() {
           <div className="flex justify-center">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-[80%] md:w-[50%] relative top-12">
               {/* Proyecto 1 */}
-              <a  href='https://task-web2.vercel.app' className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out h-[100%]">
+              <a  href='https://facture-app-ten.vercel.app/' className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out h-[100%]">
                 <img
                   src={projectImage1}
                   alt="Diseño base de E-commerce"
@@ -133,8 +133,8 @@ function Inicio() {
                  
                 />
                 <div className="mt-4">
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-800">TaskMaster</h3>
-                  <p className="text-sm md:text-base text-gray-500">Gestor de Tareas</p>
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-800">FactServices</h3>
+                  <p className="text-sm md:text-base text-gray-500">Software</p>
                 </div>
               </a>
 
@@ -153,15 +153,15 @@ function Inicio() {
               </a>
 
               {/* Proyecto 3 */}
-              <a href='https://blog-de-cafe-html.vercel.app' className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+              <a href='https://el-banano-web.vercel.app/' className="bg-white shadow-lg rounded-lg p-4 border border-gray-200 hover:shadow-2xl transition-shadow duration-300 ease-in-out">
                 <img
                   src={projectImage3}
                   alt="Blog de Caffe"
                   className="w-full h-48 object-cover rounded-lg"
                 />
                 <div className="mt-4">
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-800">Blog de Caffe</h3>
-                  <p className="text-sm md:text-base text-gray-500">Gastronomía</p>
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-800">Restaurante El Banano</h3>
+                  <p className="text-sm md:text-base text-gray-500">Gastronomia, Comercio</p>
                 </div>
               </a>
             </div>
