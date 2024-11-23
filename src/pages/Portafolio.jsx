@@ -6,7 +6,7 @@ const Portafolio = () => {
   const [animationFinished, setAnimationFinished] = useState(false);
 
   const proyectos = [
-    { id: 7, videoSrc: '/img/Fac Services - Google Chrome 2024-11-22 23-12-51.mp4', title: 'Software Facture Services', description: 'Software', link: 'https://facture-app-ten.vercel.app/' },
+    { id: 7, videoSrc: '/img/Vídeo sin título ‐ Hecho con Clipchamp.mp4', title: 'Software Facture Services', description: 'Software', link: 'https://facture-app-ten.vercel.app/' },
     { id: 6, videoSrc: '/img/El Banano - Google Chrome 2024-11-22 23-32-07.mp4', title: 'El Banano Restaurante', description: 'Comercio', link: 'https://el-banano-web.vercel.app/' },
     { id: 4, imgSrc: '/img/Captura de pantalla 2024-10-01 111251.png', title: 'App de gestión de tareas', description: 'Aplicación web', link: 'https://task-web2.vercel.app' },
     { id: 1, imgSrc: '/img/Captura de pantalla 2024-10-07 115728.png', title: 'Diseño de Portafolio', description: 'Portafolio', link: 'https://estilo-de-portafolio.vercel.app' },
