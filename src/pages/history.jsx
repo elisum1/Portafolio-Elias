@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // Importa framer-motion
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Footer from '../components/footer';
 import historyPhoto from '/public/img/photo_2024-09-27_07-20-21-remove.png';
 
 const History = () => {

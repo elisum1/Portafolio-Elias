@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion'; // Importa framer-motion
 import Header from '../components/Header';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import Footer from '../components/Footer';
+import Footer from '../components/footer';
 import contactImage from '/public/img/call-center-service.png'; // Importa la imagen de contacto
 
 const Contact = () => {

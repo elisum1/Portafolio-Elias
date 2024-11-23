@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Footer from '../components/footer';
 
 import phoneImage from '/public/img/iPhone-13-PRO-localhost.png';
 import screenshot1 from '/public/img/Captura de pantalla 2024-10-01 111251.png';

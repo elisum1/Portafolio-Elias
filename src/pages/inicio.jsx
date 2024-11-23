@@ -5,7 +5,7 @@ import projectImage1 from '/public/img/Captura de pantalla 2024-11-22 225610.png
 import projectImage2 from '/public/img/Captura de pantalla 2024-10-01 124723.png';
 import projectImage3 from '/public/img/Captura de pantalla 2024-11-22 225414.png';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Footer from '../components/footer';
 
 function Inicio() {
   const [isOpened, setIsOpened] = useState(null);
