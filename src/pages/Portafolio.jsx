@@ -30,7 +30,7 @@ const Portafolio = () => {
               portafolio<span className="text-orange-500">.</span>
             </h1>
             <p className="text-md md:text-lg text-gray-600 mt-4">Vea algunos de mis últimos estudios de casos de diseño.</p>
-            <p className="text-sm md:text-md text-gray-500 mt-2">He trabajado para empresas emergentes, agencias, corporaciones y gobiernos...</p>
+
           </div>
           <div className={`md:w-1/2 w-full flex justify-center mt-6 md:mt-0 transition-all duration-1000 ease-in-out ${animationFinished ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}`}>
             <div className="w-[90%] md:w-[80%] h-48 rounded-lg flex items-center justify-center">

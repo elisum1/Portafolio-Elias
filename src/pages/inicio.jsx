@@ -134,7 +134,7 @@ function Inicio() {
                 />
                 <div className="mt-4">
                   <h3 className="text-lg md:text-xl font-semibold text-gray-800">FactServices</h3>
-                  <p className="text-sm md:text-base text-gray-500">Software</p>
+                  <p className="text-sm md:text-base text-gray-500">Software.</p>
                 </div>
               </a>
 
@@ -148,7 +148,7 @@ function Inicio() {
                 />
                 <div className="mt-4">
                   <h3 className="text-lg md:text-xl font-semibold text-gray-800">BestDay</h3>
-                  <p className="text-sm md:text-base text-gray-500">Gestor de Hoteles</p>
+                  <p className="text-sm md:text-base text-gray-500">Gestor de Hoteles.</p>
                 </div>
               </a>
 
@@ -161,7 +161,7 @@ function Inicio() {
                 />
                 <div className="mt-4">
                   <h3 className="text-lg md:text-xl font-semibold text-gray-800">Restaurante El Banano</h3>
-                  <p className="text-sm md:text-base text-gray-500">Gastronomia, Comercio</p>
+                  <p className="text-sm md:text-base text-gray-500">Gastronomia, Comercio.</p>
                 </div>
               </a>
             </div>
