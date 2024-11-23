@@ -50,7 +50,7 @@ const About = () => {
           <div className="text-center py-16 h-[80vh] lg:h-[40vh] flex flex-col lg:flex-row justify-between items-center px-4 lg:px-10 mt-10">
             <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-800">
-                Acerca de mi<span className="text-orange-500">.</span>
+                Acerca de mi.<span className="text-orange-500">.</span>
               </h1>
               <p className="text-base md:text-lg text-gray-600 mt-4">
               Soy un diseñador y desarrollador apasionado enfocado en crear experiencias digitales centradas en el usuario.

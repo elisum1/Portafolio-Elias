@@ -75,7 +75,7 @@ const Contact = () => {
           <form className="w-full lg:w-[70%] bg-white shadow-lg rounded-lg p-4 md:p-8 grid grid-cols-1 gap-6 md:grid-cols-2 border border-gray-200">
             <div className="mb-6">
               <label htmlFor="name" className="block text-lg font-semibold text-gray-700">
-                Nombre
+                Nombre:
               </label>
               <input
                 type="text"
@@ -87,7 +87,7 @@ const Contact = () => {
 
             <div className="mb-6">
               <label htmlFor="email" className="block text-lg font-semibold text-gray-700">
-                Email
+                Email:
               </label>
               <input
                 type="email"
@@ -99,7 +99,7 @@ const Contact = () => {
 
             <div className="col-span-1 md:col-span-2 mb-6">
               <label htmlFor="subject" className="block text-lg font-semibold text-gray-700">
-                Asunto
+                Asunto:
               </label>
               <input
                 type="text"
@@ -111,7 +111,7 @@ const Contact = () => {
 
             <div className="col-span-1 md:col-span-2 mb-6">
               <label htmlFor="message" className="block text-lg font-semibold text-gray-700">
-                Mensaje
+                Mensaje:
               </label>
               <textarea
                 id="message"
