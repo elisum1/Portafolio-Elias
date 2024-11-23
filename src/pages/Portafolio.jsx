@@ -27,7 +27,7 @@ const Portafolio = () => {
         <div className={`text-center py-12 h-auto w-full flex flex-col md:flex-row justify-between items-center px-4 md:px-10 transition-all duration-1000 ease-in-out ${animationFinished ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'}`}>
           <div className="md:w-1/2 w-full">
             <h1 className="text-4xl md:text-7xl font-extrabold text-gray-800">
-              portafolio<span className="text-orange-500">.</span>
+              portafolio.<span className="text-orange-500">.</span>
             </h1>
             <p className="text-md md:text-lg text-gray-600 mt-4">Vea algunos de mis últimos estudios de casos de diseño.</p>
 
